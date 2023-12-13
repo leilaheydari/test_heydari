@@ -80,7 +80,7 @@
   </div>
   <div dir="ltr">
     <p-carousel [value]="products" [numVisible]="3"  [numScroll]="1" [circular]="false"
-      [responsiveOptions]="responsiveOptions">
+      [responsiveOptions]="responsiveOptions" >
       <ng-template let-item pTemplate="item">
         <div class="item">
           <div class="item-header">
@@ -120,48 +120,5 @@
 </div>
 
 
-<footer class="footer">
-  <div class="footer-top">
-    <strong>آماده پشتیبانی از شما هستیم!</strong>
-    <span>پاسخگوی شما در روزهای کاری، 9 صبح الی 18 عصر</span>
-    <a class="footer-top-phone btn-phone"><img src="assets/images/phone-call 1.svg">021-44332211</a>
-  </div>
-  <div class="content">
-    <div class="right">
-      <div class="title">نام کسب و کار</div>
-      <div>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
-        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</div>
-      <div>تلفن پشتیبانی <a class="content-phone btn-phone"><img src="assets/images/phone-call 1.svg">021-44332211</a>
-      </div>
-    </div>
-    <div class="left">
-      <div class="title">تخصص‌ها</div>
-      <div class="links">
-        <a class="item">اورولوژی</a>
-        <a class="item">قلب</a>
-        <a class="item">اورولوژی</a>
-        <a class="item">پزشک عمومی</a>
-        <a class="item">مغز و اعصاب</a>
-        <a class="item">پزشک عمومی</a>
-        <a class="item">اورولوژی</a>
-        <a class="item">قلب</a>
-        <a class="item">اورولوژی</a>
-        <a class="item">پزشک عمومی</a>
-        <a class="item">مغز و اعصاب</a>
-        <a class="item">پزشک عمومی</a>
-        <a class="item">اورولوژی</a>
-        <a class="item">قلب</a>
-        <a class="item">اورولوژی</a>
-        <a class="item">پزشک عمومی</a>
-        <a class="item">مغز و اعصاب</a>
-        <a class="item">پزشک عمومی</a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    تمامی حقوق متعلق به “فلان” می باشد.
-  </div>
-</footer>
-
-
+<app-footer></app-footer>
 <router-outlet></router-outlet>

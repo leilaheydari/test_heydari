@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
+import { FooterComponent } from './app/pages/home/components/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, CarouselModule , ButtonModule],
+  imports: [CommonModule, RouterOutlet, CarouselModule , ButtonModule , FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -169,5 +170,8 @@ export class AppComponent implements OnInit, AfterViewInit {
     }
   }
   responsiveOptions: any[] | undefined;
+
+
+
 
 }
