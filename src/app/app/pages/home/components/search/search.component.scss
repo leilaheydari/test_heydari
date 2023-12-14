@@ -21,10 +21,11 @@
   display: inline-block;
   border: 2px solid #e1eddc;
   border-radius: 50%;
-  height: 70px;
-  width: 70px;
+  max-height: 50px;
+  max-width: 50px;
   position: relative;
   z-index: 2;
+
 }
 
 .header-card-img::before {
@@ -35,11 +36,11 @@
   background-position: left;
   position: absolute;
   top: 5px;
-  left: -2px;
+  left: -5px;
   bottom: auto;
   right: auto;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   z-index: 3;
 }
 
@@ -48,8 +49,8 @@
   border: 2px solid #6ba74f;
   border-radius: 50%;
   overflow: hidden;
-  height: 100%;
-  max-width: 80px;
+  max-height: 50px;
+  width: 100%;
   position: relative;
   z-index: 1;
 }
