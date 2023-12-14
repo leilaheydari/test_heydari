@@ -2,6 +2,10 @@
   padding: 16px;
   background-color: #E1EDDC;
   text-align: center;
+  span{
+    display: inline-block;
+    margin-right: 5px;
+  }
 }
 
 .footer-bottom {
@@ -46,7 +50,7 @@
 
     &::before {
       content: "";
-      background-image: url(./../assets/images/Ellipse\ 623.svg);
+      background-image: url(./../../../../../../assets/images/Ellipse\ 623.svg);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: left;
@@ -60,7 +64,7 @@
 
     &::after {
       content: "";
-      background-image: url(./../assets/images/Ellipse\ 624.png);
+      background-image: url(./../../../../../../assets/images/Ellipse\ 624.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: right;

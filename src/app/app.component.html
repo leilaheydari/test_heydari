@@ -72,33 +72,13 @@
   </ul>
 </div>
 
-<div class="comments">
-  <div class="header-box">
-    <span class="box">
-      <span class="text-green">سوالات متداول </span>کاربران
-    </span>
-  </div>
-  <div dir="ltr">
-    <p-carousel [value]="products" [numVisible]="3"  [numScroll]="1" [circular]="false"
-      [responsiveOptions]="responsiveOptions" >
-      <ng-template let-item pTemplate="item">
-        <div class="item">
-          <div class="item-header">
-            <h4>{{ item.name }}</h4>
-            <span><img src="./../assets/images/star 1.png" alt="">{{item.score}}</span>
-          </div>
-          <div class="des">
-            {{item.des}}
-          </div>
-          <div class="item-buttom">
-            <span>{{item.expertise}}<span>-</span>{{item.doctor}}</span>
-            <span>{{item.date}}</span>
-          </div>
-        </div>
-      </ng-template>
-    </p-carousel>
-  </div>
-</div>
+
+   <app-search></app-search>
+
+<app-img-bax></app-img-bax>
+
+<app-user-reviews></app-user-reviews>
+
 
 <div class="users">
   <div class="header-box">

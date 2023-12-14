@@ -1,6 +1,6 @@
 @import url('https://v1.fontapi.ir/css/Estedad:100;200;300;400;500;600;700;800;900');
-@import "primeng/resources/themes/lara-light-blue/theme.css";
-@import "primeng/resources/primeng.css";
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 *{
   margin: 0;
@@ -20,22 +20,84 @@ ul{
   list-style: none;
 }
 
-.p-carousel .p-carousel-indicators .p-carousel-indicator button {
+.header-box {
+  margin-bottom: 32px;
+  text-align: center;
+  display: block;
+
+
+  .box {
+    color: #6BA74F;
+    font-size: 22px;
+    font-family: Estedad;
+    font-weight: 900;
+    word-wrap: break-word;
+    display: inline-block;
+    color: #000;
+    z-index: 3;
+    position: relative;
+
+    .text-green {
+      color: #6BA74F;
+      font-size: 22px;
+      font-family: Estedad;
+      font-weight: 900;
+      word-wrap: break-word;
+
+
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+      margin: 0px 5px;
+    }
+
+    &::before {
+      content: '';
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #B5D3A7;
+      display: inline-block;
+      position: absolute;
+      z-index: 1;
+      right: -5px;
+      top: 12px;
+    }
+  }
+
+}
+
+.owl-theme .owl-dots .owl-dot span {
   background-color: #E3E3E3;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50% !important;
   margin: 0px 3px;
   transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+.owl-theme .owl-dots .owl-dot.active span  {
   background-color: #6BA74F !important;
   width: 24px !important;
-  height: 6px;
+  height: 8px;
   border-radius: 6px !important;
 
 }
 
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 32px;
+}
 
 
+.btn{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 14px;
+  background-color: #365428;
+  color: #fff;
+
+}
